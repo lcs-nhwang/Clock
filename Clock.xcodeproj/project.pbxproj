@@ -14,6 +14,8 @@
 		C2B485882D038874004840E4 /* WorldClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B485872D038874004840E4 /* WorldClockView.swift */; };
 		C2B4858A2D03887F004840E4 /* AlarmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B485892D03887F004840E4 /* AlarmsView.swift */; };
 		C2B4858E2D0388A4004840E4 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4858D2D0388A4004840E4 /* StopwatchView.swift */; };
+		C2B485902D0392BC004840E4 /* CityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B4858F2D0392BC004840E4 /* CityView.swift */; };
+		C2B485922D049B3C004840E4 /* SingleAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B485912D049B3C004840E4 /* SingleAlarm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		C2B485872D038874004840E4 /* WorldClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockView.swift; sourceTree = "<group>"; };
 		C2B485892D03887F004840E4 /* AlarmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsView.swift; sourceTree = "<group>"; };
 		C2B4858D2D0388A4004840E4 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
+		C2B4858F2D0392BC004840E4 /* CityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityView.swift; sourceTree = "<group>"; };
+		C2B485912D049B3C004840E4 /* SingleAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleAlarm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +82,9 @@
 			children = (
 				C2B485802D03876F004840E4 /* LandingView.swift */,
 				C2B485872D038874004840E4 /* WorldClockView.swift */,
+				C2B4858F2D0392BC004840E4 /* CityView.swift */,
 				C2B485892D03887F004840E4 /* AlarmsView.swift */,
+				C2B485912D049B3C004840E4 /* SingleAlarm.swift */,
 				C2B4858D2D0388A4004840E4 /* StopwatchView.swift */,
 			);
 			path = Views;
@@ -158,10 +164,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2B485842D03876F004840E4 /* ClockApp.swift in Sources */,
+				C2B485902D0392BC004840E4 /* CityView.swift in Sources */,
 				C2B485882D038874004840E4 /* WorldClockView.swift in Sources */,
 				C2B4858A2D03887F004840E4 /* AlarmsView.swift in Sources */,
 				C2B4858E2D0388A4004840E4 /* StopwatchView.swift in Sources */,
 				C2B485852D03876F004840E4 /* LandingView.swift in Sources */,
+				C2B485922D049B3C004840E4 /* SingleAlarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
