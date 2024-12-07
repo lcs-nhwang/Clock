@@ -11,6 +11,7 @@ struct AlarmsView: View {
     var body: some View {
         NavigationStack {
             VStack {
+                Spacer()
                 HStack {
                     Image(systemName: "bed.double")
                     Text("Sleep | Wake Up")
@@ -30,9 +31,8 @@ struct AlarmsView: View {
                             .padding(EdgeInsets(top: 12, leading: 20, bottom: 12    , trailing: 20))
                             .foregroundStyle(.orange)
                             .background(Color.clear, in: Capsule())
-                        
                     }
-                   
+                    
                     
                     
                 }
@@ -42,35 +42,35 @@ struct AlarmsView: View {
                         .font(.system(size: 30))
                     Spacer()
                 }
-            }
-
-            VStack {
+                
                 SingleAlarm(time: "7:30", amOrPm: "AM")
                 SingleAlarm(time: "8:15", amOrPm: "AM")
                 SingleAlarm(time: "9:00", amOrPm: "AM")
                 SingleAlarm(time: "9:15", amOrPm: "AM")
-            }
+                Spacer()
                 
-                .navigationTitle("Alarms")
-                .toolbar {
+            }
+            .padding(.horizontal)
+            .navigationTitle("Alarms")
+            .toolbar {
+                
+                ToolbarItem(placement: .topBarLeading) {
                     
-                    ToolbarItem(placement: .topBarLeading) {
-                        
-                        Button("Edit") {
-                        }
-                        
-                    }
-                    
-                    ToolbarItem(placement: .primaryAction) {
-                        
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "plus")
-                        }
+                    Button("Edit") {
                     }
                     
                 }
+                
+                ToolbarItem(placement: .primaryAction) {
+                    
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                }
+                
+            }
         }
     }
 }
